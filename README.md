@@ -213,7 +213,7 @@ But as you can see the **DOUBLE BALCK** problem still **exists.** but now it’s
 ### W is BLACK, the furthest child; in our case the right child ( but in the mirror case it will be the left child), is BLACK, and the nearest child to X is RED.
 
 <p align=center>
-<img alt="" src="imgs/delete6.png" width=400>
+<img alt="" src="imgs/delete_6.png" width=400>
 </p>
 
 <p align=center>
