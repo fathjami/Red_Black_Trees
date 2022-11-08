@@ -10,7 +10,9 @@ A Red-Black-Tree is a binary search tree with one extra bit of storage per node:
 4. If a node is red, then both its children are black.
 5. For each node, all simple paths from the node to descendant leaves contain the same number of black nodes.
 
-![rr.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/rr.png)
+<p align=center>
+<img alt="RED BLACK TREE" src="imgs/rr.png" width=500 >
+</p>
 
 ---
 
@@ -22,15 +24,24 @@ A Red-Black-Tree is a binary search tree with one extra bit of storage per node:
 
 1. The first step is the move the right-child→left (x) to be the Pivot’s right. If you are wondering why ‘x’ and not ‘y’ while rotating the tree must stay a binary search tree so the right child is definitely greater than the pivot, so the most accurate place to put the pivot in is the left of the right-child.
 
-![a subtree with Pivot the node we want to start the Left Rotation on.](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/Screen_Shot_2022-11-06_at_9.37.12_AM.png)
+<p align=center>
+<img alt="RED BLACK TREE" src="imgs/Screen_Shot_2022-11-06_at_9.37.12_AM.png" width=300 >
+</p>
+a subtree with Pivot the node we want to start the Left Rotation on.
+
 
 a subtree with Pivot the node we want to start the Left Rotation on.
 
-![Screen Shot 2022-11-06 at 9.50.56 AM.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/Screen_Shot_2022-11-06_at_9.50.56_AM.png)
+<p align=center>
+<img alt="" src ="imgs/Screen_Shot_2022-11-06_at_9.50.56_AM.png" width=300>
+</p>
 
 1. The pivot becomes the right-child→left 
 
-![the subtree after Left Rotation.](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/Screen_Shot_2022-11-06_at_9.46.38_AM.png)
+the subtree after Left Rotation.
+<p align=center>
+<img alt="" src ="imgs/Screen_Shot_2022-11-06_at_9.46.38_AM.png" width=300>
+</p>
 
 the subtree after Left Rotation.
 
@@ -38,19 +49,26 @@ the subtree after Left Rotation.
 
 Repeat the same steps but with the left-child this time
 
-![subtree to Right Rotate.](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/Screen_Shot_2022-11-06_at_9.57.55_AM.png)
+subtree to Right Rotate.
+<p align=center>
+<img alt="" src="imgs/Screen_Shot_2022-11-06_at_9.57.55_AM.png" width=300 height=300>
+</p>
 
 subtree to Right Rotate.
 
-![subtree after  Right Rotation.](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/Screen_Shot_2022-11-06_at_10.00.29_AM.png)
+subtree after  Right Rotation.
+<p align=center>
+<img alt="" src="imgs/Screen_Shot_2022-11-06_at_10.00.29_AM.png" width=300 height=300>
+</p>
+
 
 subtree after  Right Rotation.
 
 ### Double Rotations.
 
-$**Left Right Rotation(Pivot) = Right Rotation(Pivot→right) + Left Rotation(Pivot).**$
+    **Left Right Rotation(Pivot) = Right Rotation(Pivot→right) + Left Rotation(Pivot).**
 
-$**Right Left Rotation(Pivot) = Left Rotation(Pivot→left) + Right rotation(Pivot)**$
+    **Right Left Rotation(Pivot) = Left Rotation(Pivot→left) + Right rotation(Pivot)**
 
 ---
 
@@ -108,19 +126,27 @@ case 3.2.4: Parent is a left_child and node is right_child.
 
 ### Visualization:
 
-![Screen Shot 2022-11-06 at 11.55.32 AM.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/Screen_Shot_2022-11-06_at_11.55.32_AM.png)
+
+<p align=center>
+<img alt="" src="imgs/Screen_Shot_2022-11-06_at_11.55.32_AM.png" width=400>
+</p>
 
 Set color of parent and uncle to BLACK and move node to grandParent. 
 
-![Screen Shot 2022-11-06 at 12.37.33 PM.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/Screen_Shot_2022-11-06_at_12.37.33_PM.png)
+<p align=center>
+<img alt="" src="imgs/Screen_Shot_2022-11-06_at_12.37.33_PM.png" width=400>
+</p>
 
 move node to parent and Left-Rotate node.
-
-![Screen Shot 2022-11-06 at 1.01.25 PM.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/Screen_Shot_2022-11-06_at_1.01.25_PM.png)
+<p align=center>
+<img alt="" src="imgs/Screen_Shot_2022-11-06_at_1.01.25_PM.png" width=400>
+</p>
 
 set parent color to Black and grandParent to RED. Right-Rotate grandParent.
 
-![Balanced Red-Black-Tree.](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/Screen_Shot_2022-11-06_at_3.06.02_PM.png)
+<p align=center>
+<img alt="" src="imgs/Screen_Shot_2022-11-06_at_3.06.02_PM.png" width=400>
+</p>
 
 Balanced Red-Black-Tree.
 
@@ -142,9 +168,13 @@ Balanced Red-Black-Tree.
 
 let’s take an example and visualize it:
 
-![delete1.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/delete1.png)
+<p align=center>
+<img alt="" src="imgs/delete1.png" width=400>
+</p>
 
-![delete2.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/delete2.png)
+<p align=center>
+<img alt="" src="imgs/delete2.png" width=400>
+</p>
 
 By deleting a RED node no property can be violated.
 
@@ -152,9 +182,13 @@ By deleting a RED node no property can be violated.
 
 It’s called a double black node cause we replaced a black node with another black node, in other words, there are *fewer black nodes now on that subtree* which **violates** the **BLACK DEPTH property**, and we have a black node that we need to put somewhere else so we can have a balanced Red Black Tree again.
 
-![delete3.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/delete3.png)
+<p align=center>
+<img alt="" src="imgs/delete3.png" width=400>
+</p>
 
-![delete4.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/delete4.png)
+<p align=center>
+<img alt="" src="imgs/delete4.png" width=400>
+</p>
 
 To solve this problem and Balance the tree, there are 4 cases (plus 4 which are just mirror cases)
 
@@ -168,7 +202,9 @@ to do so we need the sibling of the DOUBLE BLACK node (X which is BLACK as we sa
 2. set color of 65 to BLACK: the subtree of 65 still contains the same number of black nodes nothing changed.
 3. make W the new x.p.right.
 
-![delete5.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/delete5.png)
+<p align=center>
+<img alt="" src="imgs/delete5.png" width=700 >
+</p>
 
 But as you can see the **DOUBLE BALCK** problem still **exists.** but now it’s a different case.
 
@@ -176,9 +212,13 @@ But as you can see the **DOUBLE BALCK** problem still **exists.** but now it’s
 
 ### W is BLACK, the furthest child; in our case the right child ( but in the mirror case it will be the left child), is BLACK, and the nearest child to X is RED.
 
-![delete 6.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/delete_6.png)
+<p align=center>
+<img alt="" src="imgs/delete6.png" width=400>
+</p>
 
-![delete7.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/delete7.png)
+<p align=center>
+<img alt="" src="imgs/delete7.png" width=800 >
+</p>
 
 in this case, we need to make the w.child the root, and as you see we need a double rotation to do so.
 
@@ -190,9 +230,13 @@ NOW What if the furthest child is RED?
 
 ### **W is BLACK, and the furthest child is RED, the color of the nearest child does not matter.**
 
-![delete8.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/delete8.png)
+<p align=center>
+<img alt="" src="imgs/delete8.png" width=400 height=400>
+</p>
 
-![delete9.png](RED%20BLACK%20Trees%205c5b57cbfb784c99b7f2af98a507a797/delete9.png)
+<p align=center>
+<img alt="" src="imgs/delete9.png" width=700>
+</p>
 
 left rotate x.p, push the extra BLACK  to x.p, and the RED fo x.p the node 57, and the BLACK of 57 to 
 
