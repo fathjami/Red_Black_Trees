@@ -66,9 +66,9 @@ subtree after  Right Rotation.
 
 ### Double Rotations.
 
-    **Left Right Rotation(Pivot) = Right Rotation(Pivot→right) + Left Rotation(Pivot).**
+    Left Right Rotation(Pivot) = Right Rotation(Pivot→right) + Left Rotation(Pivot).
 
-    **Right Left Rotation(Pivot) = Left Rotation(Pivot→left) + Right rotation(Pivot)**
+    Right Left Rotation(Pivot) = Left Rotation(Pivot→left) + Right rotation(Pivot)
 
 ---
 
@@ -238,9 +238,7 @@ NOW What if the furthest child is RED?
 <img alt="" src="imgs/delete9.png" width=700>
 </p>
 
-left rotate x.p, push the extra BLACK  to x.p, and the RED fo x.p the node 57, and the BLACK of 57 to 
-
-1. **TADA!**
+left rotate x.p, push the extra BLACK  to x.p, and the RED fo x.p the node 57, and the BLACK of 57 to 60 **TADA!**
 
 one case left.
 
